@@ -48,4 +48,4 @@ class View:
         if result is not None:
             print(f"RESULTAT : {operation} = {result}")
         else:
-            print(f"Votre operation est incorrect ! : {operation}")
+            print(f"Votre opération est incorrecte ! : {operation}")
