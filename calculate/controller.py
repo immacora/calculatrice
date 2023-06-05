@@ -9,8 +9,8 @@ class Controller:
 
     def run(self):
         """
-            Run the principal Menu and the user can choice
-            which operation he would like to use.
+        Run the principal Menu and the user can choice
+        which operation he would like to use.
         """
         View.print_menu()
         is_home_menu_run = True
@@ -25,20 +25,20 @@ class Controller:
 
     def _is_input_valid(self, user_input):
         """
-            Checks if the input corresponds to a possibility of operations.
+        Checks if the input corresponds to a possibility of operations.
 
-            :param user_input: User input enter in the method run().
-            :return: Return True if the input corresponds to a possibility of operations
-                     otherwise it return False.
+        :param user_input: User input enter in the method run().
+        :return: Return True if the input corresponds to a possibility of operations
+                 otherwise it return False.
         """
         return user_input in ["1", "2", "3", "4"]
 
     def _operations(self, user_input):
         """
-            Calls the function corresponding with the operation ask by the user and
-            get the user operation by an input.
+        Calls the function corresponding with the operation ask by the user and
+        get the user operation by an input.
 
-            :param user_input: User input enter in the method run().
+        :param user_input: User input enter in the method run().
         """
         input_msg = "Entrez votre opération"
         operation = View.get_user_input(input_msg)
@@ -57,10 +57,10 @@ class Controller:
 
     def _is_quit(self, user_input):
         """
-            Checks if the user ask for stop the script thanks to the input enter
-            in the method run().
+        Checks if the user ask for stop the script thanks to the input enter
+        in the method run().
 
-            :param user_input: User input enter in the method run().
-            :return: True if the user ask for exit the script.
+        :param user_input: User input enter in the method run().
+        :return: True if the user ask for exit the script.
         """
         return not user_input == "5"
